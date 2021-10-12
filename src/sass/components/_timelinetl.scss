@@ -1,0 +1,51 @@
+@use'../abstracts' as *;
+
+.timeline-container{
+    width:100%;
+    height:100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    place-items:center;      
+    outline: 1px solid $clr-outline;
+    margin:20px;
+  }
+  
+  .timeline {
+    outline: 1px solid $clr-outline;
+    display:grid;
+    grid-template-columns: 1fr 40px minmax(200px, 2fr) 1fr;
+    width: 700px;
+  }
+  .tl-date-rel{
+    display: grid;
+    justify-items: end;
+    
+    font-family: $fnt-time;
+    font-size: .7rem;
+  }
+  .tl-date{
+    display: flex;  
+    justify-content: flex-end;
+    place-items:center;   
+    font-family: $fnt-time;
+    font-size: .7rem;
+  }
+  .tl-status{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items:center;
+    height: 30px;
+    position:relative;
+  }
+
+  .tl-info {
+    font-family: $fnt-title;
+    color: $clr-title;
+    font-size: 1rem;
+    display:flex;
+    justify-content: flex-left;
+    place-items:center;
+  
+  }
